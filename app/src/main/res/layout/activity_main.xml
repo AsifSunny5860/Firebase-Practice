@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dhakafood" />
+
+    <TextView
+        android:id="@+id/RegistrationTV"
+        android:layout_below="@id/logoIV"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Get Registered"
+        android:background="@drawable/rounded_textview"
+        android:textColor="#000"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_below="@id/RegistrationTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#000224"
+        android:background="@drawable/rounded_textview"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/FirstnameET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="  First name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/LastnameET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="  Last name"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/editTextCountryCode"
+                android:singleLine="true"
+                android:background="#fff"
+                android:layout_weight=".7"
+                android:hint="    Code"
+                android:layout_marginRight="5dp"
+                />
+
+            <EditText
+                android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/editTextPhone"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:layout_weight=".2"
+                android:singleLine="true"
+                android:hint="  phone number"
+                />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the terms and conditions"
+            android:checked="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:id="@+id/AcceptCB"/>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000224"
+    android:orientation="vertical"
+    tools:context=".VerifyActivity">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dhakafood"/>
+
+    <ProgressBar
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:hint="  Enter your code"
+        android:padding="10dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textColor="#fff"
+        android:id="@+id/buttonSignIn"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#03A9F4"/>
+
+</LinearLayout>

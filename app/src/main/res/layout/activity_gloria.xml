@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gloria">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#60352e">
+
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/gl1" />
+
+        <LinearLayout
+            android:layout_below="@id/imageview"
+            android:id="@id/layout"
+            android:orientation="vertical"
+            android:background="#92665d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_subdirectory_arrow_right_black_24dp"
+                android:padding="5dp"
+                android:text=" House 2B, Block NE(B), Road 71, Gulshan North Avenue Dhaka, Bangladesh 1212"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:padding="5dp"
+                android:text=" Hours 10:00 AM - 12:00 AM"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                android:padding="5dp"
+                android:text=" 01974-008989"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_group_black_24dp"
+                android:padding="5dp"
+                android:text=" Total Capacity 150"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_subdirectory_arrow_right_black_24dp"
+                android:padding="5dp"
+                android:text=" Gulshan-1,Banani,Dhanmondi branches" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_textview"
+                android:text="      Interior"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="#fff"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/colorGray">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorGray">
+
+                </androidx.viewpager.widget.ViewPager>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

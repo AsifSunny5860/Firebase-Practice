@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nandos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/nandoso" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_below="@id/imageview"
+            android:drawableLeft="@drawable/ic_subdirectory_arrow_right_black_24dp"
+            android:padding="5dp"
+            android:text=" House # 43, Road # 16 (New), 27(Old), Dhanmondi, Dhaka, 1209 Dhaka, Bangladesh" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_below="@id/textview"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:padding="5dp"
+            android:text=" Hours 12:00 PM - 12:00 AM" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_below="@id/textview2"
+            android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+            android:padding="5dp"
+            android:text=" 01841-113322" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview3"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:padding="5dp"
+            android:text=" Total Capacity 80" />
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview4"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/ic_subdirectory_arrow_right_black_24dp"
+            android:padding="5dp"
+            android:text=" Gulshan-1,Banani,Dhanmondi branches" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview5"
+            android:id="@+id/mapButton"
+            android:text="Go to Map"
+            android:textAllCaps="false"
+            android:background="#000"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_below="@id/mapButton"
+            android:id="@+id/layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@drawable/rounded_textview"
+                android:layout_margin="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:text="      Interior"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:scrollbars="horizontal"
+                android:background="#fff">
+
+                <LinearLayout
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cardview"
+                app:cardBackgroundColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/viewpager"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp">
+
+                </androidx.viewpager.widget.ViewPager>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

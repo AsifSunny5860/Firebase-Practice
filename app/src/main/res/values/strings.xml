@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Project</string>
+    <string name="Type1">Business Meeting,Big events,Celebrations or family things suits this Places.</string>
+    <string name="Type2">Hangout with Friends,Couple date,Events,Get-Together suits this Places</string>
+    <string name="Type3">Hangouts,School-College mates,Gossiping and Light Foods suits this Places</string>
+    <string name="title_activity_nandos">Nandos</string>
+    <string name="title_activity_nandos_">Nandos_Activity</string>
+    <string name="title_activity_gloria_">Gloria_Activity</string>
+    <string name="title_toolbar">Premium</string>
+    <string name="title2_toolbar">Comfort</string>
+    <string name="title_activity_caferio">Caferio</string>
+    <string name="title_activity_guha">Guha</string>
+    <string name="title3_toolbar">Regular</string>
+    <string name="title_pro">Dashboard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Detail</string>
+    <string name="title_activity_gloria">Gloria</string>
+    <string name="title_activity_picasso">Picasso</string>
+    <string name="title_activity_greenlounge">Greenlounge</string>
+    <string name="title_activity_burger">Burger</string>
+    <string name="title_activity_mirror">Mirror</string>
+    <string name="title_activity_chilekotha">Chilekotha</string>
+    <string name="title_activity_hangout">Hangout</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

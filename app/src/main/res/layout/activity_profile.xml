@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#D3CC423E"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_pro"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:id="@+id/Title" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:background="#EED7F7EF"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/userIV"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/photo"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Add Picture"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/NameTV"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:id="@+id/mobileNumber"/>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_below="@id/ll1"
+            android:background="#000"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/PremiumBT"
+            android:text="Premium"
+            android:layout_margin="1dp"
+            android:onClick="Premium"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/ComfortBT"
+            android:text="Comfort"
+            android:layout_margin="1dp"
+            android:onClick="Comfort"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/RegularBT"
+            android:text="Regular"
+            android:layout_margin="1dp"
+            android:onClick="Regular"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/ll2"
+        android:id="@+id/FrameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
